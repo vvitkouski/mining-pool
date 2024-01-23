@@ -2,7 +2,7 @@
     "logPath": "./logs/",
 
     "connectionTimeout": 600,
-    "maxConnectionsFromSameIP": 10,
+    "maxConnectionsFromSameIP": 500,
     "whitelistIps": [],
 
     "jobExpiryPeriod": 10,
@@ -20,10 +20,10 @@
     "diff1TargetNumZero": 30,
     "pool": {
         "port": 20032,
-        "proxyProtocol": false,
         "diff": 1,
+        "proxyProtocol": false,
 
-        "varDiff": {
+        "varDiff": { 
             "minDiff": 1,
             "maxDiff": 4096,
             "targetTime": 2.5,
@@ -33,9 +33,9 @@
     },
 
     "daemon": {
-        "host": "127.0.0.1",
+        "host": "192.168.0.139",
         "port": 12973,
-        "apiKey": "0000000000000000000000000000000000000000000000000000000000000000",
+        "apiKey": "AfCHOxLMqi29Fpzyl2AXNfKOmphioEMaPib0otNK4Th8QRhw",
         "minerApiPort": 10973
     },
 
@@ -45,7 +45,7 @@
         "db": 0
     },
 
-    "withholdPercent": 0.005,
+    "withholdPercent": 0.01,
     "rewardEnabled": true,
     "rewardInterval": 600,
     "confirmationTime": 30600,
@@ -61,18 +61,18 @@
 
     "persistence": {
         "enabled": false,
-        "host": "127.0.0.1",
+        "host": "mining-postgres",
         "port": 5432,
         "user": "postgres",
         "password": "postgres",
         "database": "mining-pool"
     },
 
-    "addresses": [],
+    "addresses": ["1DQv9U5GuU8Znk9anvFs7ihCCCixb17NFKA795sMV4Y3w", "1E8enjWumuQdhZzUEtrEJqvT6KZDAFuu6M3eucHNgRPDx", "1DiQ4y3LQutHeKVmAtYFR6UhLCaEof9iYXwxFXPEj37bT", "1DTpqgA5dNK8UfWCHazNTidMn7PMPUgFMh2A92QqtN64c"],
 
     "wallet": {
-        "name": "",
-        "password": "",
-        "mnemonicPassphrase": ""
+        "name": "New",
+        "password": "test",
+        "mnemonicPassphrase": "laugh age second mass artefact situate kid voice drink stove tourist aunt essence snake blame family tray imitate axis title risk skill fuel flash"
     }
 }
